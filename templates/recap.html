@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recap</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta name="viewPort" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Recap</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+            <li><a href="#">Page 4</a></li>
+        </ul>
+
+        <form  class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" class="form-control" name="search" placeholder="search">
+                <button class="btn btn-success">Search</button>
+            </div>
+
+        </form>
+
+    </div>
+</nav>
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+    <li><a href="#about" data-toggle="tab">About US</a></li>
+    <li class="dropdown">
+        <a href="#contact" class="dropdown-toggle" data-toggle="dropdown">Contact Us
+        <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Jante</a></li>
+            <li><a href="#">Sue</a></li>
+            <li><a href="#">Sarah</a></li>
+        </ul>
+
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+        <h4>Home</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eos est odit perferendis quo recusandae
+            rerum voluptas? Corporis cumque cupiditate dolor et impedit iure laudantium quibusdam quod. Facere, tenetur
+            veritatis.</p>
+    </div>
+    <div id="about" class="tab-pane fade">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur cum deserunt, dolorem dolores
+            error incidunt nam officiis porro ratione repudiandae similique tempora vitae! Earum illo ipsa nemo tempora
+            vero.</p>
+    </div>
+    <div class="tab-pane fade">
+        <h4>Contact Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio dolorum eius eveniet iusto
+            nulla possimus veritatis. Consequatur fuga fugit in ipsam iusto nisi nostrum optio, qui quibusdam ratione
+            rem!</p>
+    </div>
+
+</div>
+
+<div class="container">
+<canvas id="myCanvas" height="500" width="500" style="border: solid black">
+
+</canvas>
+</div>
+
+
+<script>
+    var canvas=document.getElementById("myCanvas");
+    var ctx=canvas.getContext("2d");
+    ctx.fillStyle="#A00";
+    ctx.fillRect(5,5,150,75);
+    ctx.fillRect(175,5,150,75);
+    ctx.fillStyle="#C80";
+    ctx.fillRect(5,90,150,75);
+    ctx.fillRect(175,90,150,75);
+
+</script>
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+</body>
+</html>

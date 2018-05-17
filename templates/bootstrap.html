@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+
+    <!--links to a css file in the bootstrap folder-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!--<style>-->
+        <!--.text-danger{ color: #1b6d85;}-->
+    <!--</style>-->
+</head>
+<body>
+
+<!--styles are applied by calling their respective classes from the css file inside the tags.-->
+    <h2 class="text-center text-uppercase text-danger">Bootstrap</h2>
+<!--Separating the website into colummns-->
+
+<!--first divid the entire website into a single row split into 12 columns.-->
+    <div class="row">
+<!--further divide the row into the desired columns making sure not to exceed a total of 12 columns.-->
+        <div class="col-sm-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis error ex harum inventore ipsa iste nemo, quo rerum, tempora tenetur totam vero voluptates? Eaque fugit provident quod reiciendis voluptatum?
+        </div>
+        <div class="col-sm-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolorem et, neque officiis perspiciatis sint ut! Deserunt dolore harum, ipsum nam nostrum officia optio pariatur possimus qui suscipit unde voluptatum!
+        </div>
+    </div>
+    <hr> <!--draws a line across entire page-->
+
+<!--splitting the page into three unequal parts -->
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit harum quaerat voluptas. Ab animi blanditiis cupiditate eaque, eius est incidunt ipsum natus nihil nulla odio pariatur quidem repudiandae sint temporibus!
+        </div>
+        <div class="col-sm-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita fugiat nam optio porro ratione? Atque delectus earum eius, error, esse explicabo facere incidunt iure numquam pariatur provident quia, quidem sunt.
+        </div>
+        <div class="col-sm-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto doloribus maxime odio ullam? Accusantium ad at cumque dolorem fugiat nam obcaecati placeat porro, quia, quos recusandae tempore vel vero.
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
